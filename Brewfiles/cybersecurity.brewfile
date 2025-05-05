@@ -17,6 +17,7 @@ brew "hashcat"
 brew "theharvester"
 brew "amass"
 brew "nikto"
+brew "gobuster"
 
 # --- Pentesting frameworks ---
 cask "metasploit"
