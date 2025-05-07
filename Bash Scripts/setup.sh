@@ -3,6 +3,9 @@
 set -e # Exit immediately if a command exits with a non-zero status
 set -u # Treat unset variables as an error
 
+# Optional: Add PostgreSQL official repo setup
+# sudo /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh
+
 echo "🛞 Updating package lists..."
 sudo apt update
 
@@ -26,10 +29,18 @@ sudo apt install -y \
 	nodejs \
 	npm \
 	build-essential \
-	cmake
+	cmake \
 
-# Optional: Add PostgreSQL official repo setup
-# sudo /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh
-    
+
+
+# Optional : Install Rust + Cargo
+# This will install the latest stable version of Rust and Cargo
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+# Optional : Install command line tools using Cargo
+sudo cargo install -y \
+	bat \
+	eza \
+	rg
 
 echo "✅ Installation complete!"

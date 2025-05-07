@@ -17,6 +17,9 @@ brew install telnet          # Basic unencrypted network tool (good for raw netw
 brew install thefuck         # Corrects previous console commands automatically
 brew install tmux            # Terminal multiplexer (split windows, persistent sessions)
 brew install vim             # Classic modal text editor
+brew install eza             # A more helpful version of ls 
+brew install cat             # A more helpful version of cat 
+brew install rg              # A more helpful version of grep
 
 # --- Infrastructure & DevOps Tools ---
 brew install ansible         # Automation for servers and infrastructure
